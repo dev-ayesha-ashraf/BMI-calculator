@@ -1,0 +1,155 @@
+body{
+    background-color: #1d1d29;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+h1::after{
+    content: '';
+    width: 90px;
+    height: 4px;
+    margin-top: 9px;
+    background-color: rgb(227, 43, 73);
+    position: absolute;
+    display: block;
+    margin-left: 45%;
+}
+.container{
+    width: 65%;
+    text-transform: capitalize;
+    margin: auto;
+}
+.gender{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.row{
+    width: 45%;
+    background-color: #34344a;
+    margin: 0;
+    padding: 0;
+    height: 32vh;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+.fa,
+.bi{
+    color: rgb(227, 43, 73);
+    font-weight: 900;
+    font-size: 60px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+}
+.input{
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+input{
+    height: 27px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+label{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+}
+.age-row{
+    color: #fff;
+    width: 60%;
+    margin: auto;
+    background-color: #34344a;
+    height: 32vh;
+    border-radius: 12px;
+}
+.age-row i{
+    color: rgb(227, 43, 73);
+    font-size: 80px;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.age-row input{
+    display: flex;
+    margin: auto;
+}
+button{
+    background-color: rgb(227, 43, 73);
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 40%;
+    height: 55px;
+    font-weight: 500;
+    font-size: 25px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(227, 43, 74, 0.735);
+}
+#result{
+    color: #fff;
+}
+#result{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 35px;
+}
+@media (max-width:765px){
+    .container{
+        width: 85% !important;
+    }
+    h1::after{
+        margin-left: 39%;
+    }
+}
+@media(max-width:540px){
+    .row{
+        width: 49%;
+    }
+    .container{
+        width: 95% !important;
+    }
+    h1::after{
+        margin-left: 34%;
+    }
+}
+@media(max-width:420px){
+    input{
+        width: 70%;
+    }
+    .row{
+        height: 29vh;
+    }
+    h1::after{
+        margin-left: 30%;
+    }
+}
+@media(max-width:470px){
+    button{
+        width: 65%;
+    }
+}
+@media (max-width:350px){
+    .row{
+        height: 35vh;
+    }
+}

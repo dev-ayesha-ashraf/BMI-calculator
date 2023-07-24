@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <h1>BMI Calculator</h1>
+    <div class="container">
+
+        <h3>Gender</h3>
+        <div class="gender">
+            <div class="row">
+                <div class="gender-icon">
+                    <i class="fa fa-male" aria-hidden="true" style="display: flex;"></i>
+                    <div class="input">
+                        <input type="radio" name="" id="male">
+                        <label for="male">Male</label>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="gender-icon">
+                    <i class="fa fa-female" aria-hidden="true" style="display: flex;"></i>
+                    <div class="input"> <input type="radio" name="" id="male">
+                        <label for="male">female</label>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <h3>Height & Weight</h3>
+        <div class="gender">
+            <div class="row">
+                <div class="gender-icon">
+                    <i class="bi bi-clock-history"></i>
+                    <div class="input"> <label for="male">Weight (In kg)</label>
+
+                        <input type="text" name="" id="weight">
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="gender-icon">
+                    <i class="bi bi-arrow-up-circle-fill"></i>
+                    <div class="input">
+                        <label for="male">Height (In cm)</label>
+
+                        <input type="text" name="" id="Height">
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <h3>Age</h3>
+        <div class="age-row">
+            <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+            <i>+</i>
+            <input type="text" name="" id="age" placeholder="Age">
+        </div>
+        <button onclick="calculate()">Calculate BMI</button>
+        <div id="result">
+        </div>
+
+        </div>
+        <script src="./app.js"></script>
+</body>
+
+</html>
